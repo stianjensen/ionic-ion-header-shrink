@@ -12,7 +12,7 @@
     <script src="http://code.ionicframework.com/1.0.0-beta.13/js/ionic.bundle.js"></script>
 
     <!-- your app's script -->
-    <script src="../ionic.headerShrink.js"></script>
+    <script src="../ionic.subHeaderShrink.js"></script>
 
     <style>
       ion-content {
@@ -21,7 +21,7 @@
     </style>
 
     <script>
-      angular.module('starter', ['ionic', 'ionic.ion.headerShrink']);
+      angular.module('starter', ['ionic', 'ionic.ion.subHeaderShrink']);
     </script>
   </head>
 
@@ -37,7 +37,12 @@
         </div>
         <h1 class="title">Things</h1>
       </ion-header-bar>
-      <ion-content header-shrink scroll-event-interval="5">
+
+      <ion-header-bar class="bar-subheader bar-assertive">
+        <h1>hallo</h1>
+      </ion-header-bar>
+
+      <ion-content sub-header-shrink scroll-event-interval="5" has-subheader="true">
         <div style="height: 50px;"></div>
         <div class="list card">
 
